@@ -29,7 +29,7 @@ public class Buscador extends HttpServlet {
 		out.println("<html><body>");
 		List<Pagina> items=BuscadorServiceFactory.getBuscadorService().buscar(clave);
 		items.forEach(it->
-			out.println("<h1><a href='"+it.getUrl()+"'>"+it.getNombre()+"</a></h1>")
+			out.println("<h2><a href='"+it.getUrl()+"'>"+it.getNombre()+"</a></h2>")
 		);
 			
 		out.println("</body></html>");
